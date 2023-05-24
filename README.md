@@ -6,3 +6,8 @@ This project is about using a deep neural network to predict the heating load an
  
 ## Objective 🎯 
 The goal is to train a  deep neural network capable of predict the heating load and cooling load of buildings.
+
+
+## Business metric 📊
+
+## Deliverables 🧮
