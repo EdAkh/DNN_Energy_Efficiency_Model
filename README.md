@@ -13,20 +13,19 @@ We developed a Sequential model using TensorFlow, which comprises eight inputs. 
 To facilitate information flow within the network, we employed the Rectified Linear Unit (ReLU) activation function in the hidden layers. This activation function ensures that neurons are activated when the input has a positive value and deactivated when it is negative.
 
 For the output layer, we utilized a linear activation function. This choice is particularly suitable for linear regression tasks, as it allows the model to predict continuous values.
-<p align="center">
-<img src="https://github.com/EdAkh/RNN_Energy_Efficiency_Model/assets/98283423/be17f847-6c9c-4feb-8f90-832ec35a1dc6" width="240" height="370">
-</p>
+
+<img align="center" src="https://github.com/EdAkh/RNN_Energy_Efficiency_Model/assets/98283423/be17f847-6c9c-4feb-8f90-832ec35a1dc6" width="240" height="370">
 
 ## Metrics 📊
 To assess the performance of our model, we employed the mean squared error (MSE) as the loss function, which is commonly used for regression problems. Additionally, we used the R-Squared metric to measure accuracy.
 <p>
-<img src="https://github.com/EdAkh/RNN_Energy_Efficiency_Model/assets/98283423/05eef4ba-fb23-45de-b7c2-26158de68941" width="300" height="50" hspace="10">
-<img src="https://github.com/EdAkh/RNN_Energy_Efficiency_Model/assets/98283423/d490f37c-9dc3-4e7a-967a-fd3c4db40a7a" width="300" height="50" hspace="10">
+<img src="https://github.com/EdAkh/RNN_Energy_Efficiency_Model/assets/98283423/05eef4ba-fb23-45de-b7c2-26158de68941" width="300" height="50" hspace="20">
+&
+<img src="https://github.com/EdAkh/RNN_Energy_Efficiency_Model/assets/98283423/d490f37c-9dc3-4e7a-967a-fd3c4db40a7a" width="300" height="50" hspace="20">
  <p>
 <img src="https://github.com/EdAkh/RNN_Energy_Efficiency_Model/assets/98283423/b516d605-ff56-4b22-a7c5-92e1ecfb2a0c" width="500" height="240">
 </p>
 
 After obtaining the predicted values, we divided them into two parts: y1 for the heating load and y2 for the cooling load. For each of these subsets, we applied linear regression using the scikit-learn library. To visualize the fit of our data points to the regression line, we plotted the results.
 
-![1-E5TbeWNqRrvFTNM5kgR6Aw|500x500](https://github.com/EdAkh/RNN_Energy_Efficiency_Model/assets/98283423/4de011c4-774b-44ab-adf9-115a37c7cd08)
-
+<img align="center" src="https://github.com/EdAkh/RNN_Energy_Efficiency_Model/assets/98283423/4de011c4-774b-44ab-adf9-115a37c7cd08" width="250" height="250">
