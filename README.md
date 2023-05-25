@@ -8,8 +8,7 @@ This project is about using a recurrent neural network to predict the heating lo
 The goal is to train a  deep neural network capable of predict the heating load and cooling load of buildings.
 
 ## Model 🤖
-We used a RNN with eight inputs, two hidden layers with 128 nodes each and two outputs for the two outcomes, as we can see in the diagram below:
-![nn(1)](https://github.com/EdAkh/DNN_Energy_Efficiency_Model/assets/98283423/68a81897-b999-4568-9baa-aaa1711e5fbc)
+We used a RNN with eight inputs, two hidden layers with 128 nodes each and two outputs for the two outcomes, as we can see in the diagram below:![nn(1)](https://github.com/EdAkh/DNN_Energy_Efficiency_Model/assets/98283423/68a81897-b999-4568-9baa-aaa1711e5fbc)
 
 
 
