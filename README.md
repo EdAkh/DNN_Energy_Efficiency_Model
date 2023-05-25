@@ -1,17 +1,20 @@
-# Recurrent Neural Network For Energy Efficiency Prediction Model 
+# Deep Neural Network For Energy Efficiency Prediction Model 
 
 ## Introduction 📚
 
-This project is about using a recurrent neural network to predict the heating load and cooling load of buildings. The data set used is from UCI (https://archive.ics.uci.edu/ml/datasets/energy+efficiency#) and is based on a Ecotect simulation of twelve different building, by playing with eight parameters (Relative Compactness, Surface Area, Wall Area, Roof Area, Overall Height, Orientation, Glazing Area, Glazing Area Distribution) they obtained 768 different shapes of building which have two outcomes (Heating Load and Cooling Load).
+This project is about using a deep neural network to predict the heating load and cooling load of buildings. The data set used is from UCI (https://archive.ics.uci.edu/ml/datasets/energy+efficiency#) and is based on a Ecotect simulation of twelve different building, by playing with eight parameters (Relative Compactness, Surface Area, Wall Area, Roof Area, Overall Height, Orientation, Glazing Area, Glazing Area Distribution) they obtained 768 different shapes of building which have two outcomes (Heating Load and Cooling Load).
  
 ## Objective 🎯 
 The goal is to train a  deep neural network capable of predict the heating load and cooling load of buildings.
 
 ## Model 🤖
-We used a RNN with eight inputs, two hidden layers with 128 nodes each and two outputs for the two outcomes, as we can see in the diagram below:![nn(1)](https://github.com/EdAkh/DNN_Energy_Efficiency_Model/assets/98283423/68a81897-b999-4568-9baa-aaa1711e5fbc)
+We developed a Sequential model using TensorFlow, which comprises eight inputs. The model architecture consists of two hidden layers, each containing 128 nodes, two nodes for each outcomes. The diagram below visually represents this configuration:
+![nn(1)](https://github.com/EdAkh/DNN_Energy_Efficiency_Model/assets/98283423/68a81897-b999-4568-9baa-aaa1711e5fbc)
+To facilitate information flow within the network, we employed the Rectified Linear Unit (ReLU) activation function in the hidden layers. This activation function ensures that neurons are activated when the input has a positive value and deactivated when it is negative.
 
+For the output layer, we utilized a linear activation function. This choice is particularly suitable for linear regression tasks, as it allows the model to predict continuous values.
 
+## Metrics 📊
+To assess the performance of our model, we employed the mean squared error (MSE) as the loss function, which is commonly used for regression problems. Additionally, we used the R-Squared metric to measure accuracy.
 
-## Business metric 📊
-
-## Deliverables 🧮
+After obtaining the predicted values, we divided them into two parts: y1 for the heating load and y2 for the cooling load. For each of these subsets, we applied linear regression using the scikit-learn library. To visualize the fit of our data points to the regression line, we plotted the results.
